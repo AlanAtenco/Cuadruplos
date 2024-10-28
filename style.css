@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #162447);
+    color: #e0e0e0;
+    overflow: hidden;
+  }
+  .container {
+    background: linear-gradient(145deg, #162447, #1f4068);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+    transform: translateY(-10px);
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  h1 {
+    margin-bottom: 20px;
+    color: #e94560;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #a8a8d8;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #2f2fa2;
+    border-radius: 6px;
+    background-color: #e0e0e0;
+    color: #162447;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 168, 204, 0.4);
+    transform: scale(1.02);
+  }
+  button {
+    padding: 12px 18px;
+    background: linear-gradient(145deg, #00a8cc, #008bb5);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 168, 204, 0.4);
+  }
+  button:hover {
+    background: linear-gradient(145deg, #008bb5, #007a9e);
+    transform: scale(1.05);
+  }
+  #result, #cuadruplos {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #e94560;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

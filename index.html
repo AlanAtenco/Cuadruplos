@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuádruplos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cuádruplos</h1>
+    <form id="operation-form">
+      <label for="operation">Ingresa una operación:</label>
+      <input type="text" id="operation" placeholder="Ej: 3 + 5 * 2 - 4 / 2">
+      <button type="button" onclick="generateCuadruplos()">Resolver</button>
+    </form>
+    <div id="result"></div>
+    <div id="cuadruplos"></div>
+  </div>
+  <script src="./cuadruplos.js"></script>
+</body>
+</html>
